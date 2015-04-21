@@ -1,0 +1,9 @@
+{application,myapp,
+             [{description,"myapp"},
+              {vsn,"1.0"},
+              {modules,[myapp_acceptor,myapp_app,myapp_client,myapp_echo,
+                        myapp_mod_helper,myapp_server,myapp_sup,myapp_tcp]},
+              {registered,[]},
+              {applications,[kernel,stdlib,sasl]},
+              {mod,{myapp_app,[]}},
+              {env,[]}]}.
